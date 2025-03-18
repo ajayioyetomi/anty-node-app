@@ -24,7 +24,7 @@ const converTimeToUserTimezone = (datetime, timezone) =>{
     return newDate;
 }
 
-const cronTimerInterval = 60 * 1000 * 1;
+const cronTimerInterval = 60 * 1000 * 60;
 
 const generateDateTime = (timezone = 1) =>{
     const d = getCurrentDateTime(timezone);
