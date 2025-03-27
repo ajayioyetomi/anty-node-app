@@ -273,6 +273,7 @@ const updateTwitterDbData = async () => {
 };
 
 const getTwitterFollowers = async () => {
+  // await updateTwitterDbData();
   return new Promise(async (resolve, reject) => {
     console.log("test");
     try {
