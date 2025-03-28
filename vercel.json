@@ -1,7 +1,6 @@
 {
   "name":"test antishifty api",
   "version":"1.0.0",
-  "license":"ISC",
   "dependencies":{
     "express":"^4.17.3"
   }
