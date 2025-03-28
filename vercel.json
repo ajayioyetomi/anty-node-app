@@ -1,9 +1,6 @@
 {
   "name":"test antishifty api",
   "version":"1.0.0",
-  "scripts":{
-    "start":"node server.js"
-  },
   "keywords":[],
   "author":"https://github.com/ajayioyetomi",
   "license":"ISC",
