@@ -1,7 +1,4 @@
 {
   "name":"test antishifty api",
-  "version":"1.0.0",
-  "dependencies":{
-    "express":"^4.17.3"
-  }
+  "version":"1.0.0"
 }
