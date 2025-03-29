@@ -1,4 +1,6 @@
 {
   "name":"test antishifty api",
-  "version":2
+  "version":2,
+  "builds":[{"src":"./index.js","use":"@vercel/node"}],
+  "routes":[{"src":"/(.*)","dest":"/"}]
 }
