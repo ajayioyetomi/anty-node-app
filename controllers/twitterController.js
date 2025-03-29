@@ -292,6 +292,7 @@ const getTwitterFollowers = async () => {
 };
 
 const updateTwitterData = async () => {
+  updateTwitterDbData();
   setInterval(async () => {
     console.log('check for updates')
     await updateTwitterDbData();
