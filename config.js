@@ -40,7 +40,7 @@ const generateDateTime = (timezone = 1) =>{
     const sec = d.getSeconds();
     const seconds = sec < 9 ? `0${sec}`:sec.toString();
 
-    return [`${year}${month}${day}`,`${hours}-${minutes}-${seconds}`];
+    return [`${year}${month}${day}`,`${hours}${minutes}${seconds}`];
 }
 
 // const getUserDb = () => {

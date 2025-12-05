@@ -240,20 +240,24 @@ async function updateTwitterUserTweetsData() {
 }
 
 function getCurrentDate() {
-  let [date] = generateDateTime();
-  return Number(date);
+  let [date,time] = generateDateTime();
+  let newDate = Number(date)*1000000;
+  let newTime = Number(time);
+  return newDate + newTime;
 }
 
 const updateTwitterDbData = async () => {
   try {
+    
     let db = await readDB();
     let db_content = JSON.parse(db);
     twitter = db_content?.twitter || {};
 
     let old_date = Number(twitter?.date || "0");
     let new_date = Number(getCurrentDate());
+    
 
-    if (new_date == old_date) return twitter;
+    if (old_date+10000 > new_date) return twitter;
     console.log("first");
     await updateTwitterProfileData();
     console.log("second");
